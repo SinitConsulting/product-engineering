@@ -1,3 +1,10 @@
+# Ejercicio - Clase 2:  Demitificando el vibe coding
+## Curso fundamentos de product engineering con IA - codigofacilito.com
+El presente repositorio es el desarrollo del Ejercicio Nº 2. Tarea: De prompt a especificación
+Para su desarrollo se utilizo Google Antigravity-IDE, un Marco Agentico con el que vengo trabajando. Para este trabajo utilize "Spec Kit" el cual fue instalado en Antigravity para este proyecto en especifico. "Spec Kit" genera el flujo de trabajo utilizando la metodologia SDD preguntando y elaborando documentos.
+Además, y de acuerdo al postulado del ejercicio se creo una skill para el diseño de marca de la aplicación.
+
+
 # 📦 Control de Inventario FIFO por Códigos de Colores y Registro Rápido
 
 > **Proyecto de Product Engineering con Inteligencia Artificial — Clase 2**  
