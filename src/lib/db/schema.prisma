@@ -1,0 +1,50 @@
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Product {
+  id                 String           @id @default(uuid())
+  sku                String           @unique
+  name               String
+  category           String           @default("PERISHABLE") // PERISHABLE | NON_PERISHABLE
+  unit               String           @default("UNIDAD")
+  currentTotalStock  Int              @default(0)
+  createdAt          DateTime         @default(now())
+  updatedAt          DateTime         @updatedAt
+  batches            InventoryBatch[]
+}
+
+model InventoryBatch {
+  id                 String                 @id @default(uuid())
+  productId          String
+  batchNumber        String
+  initialQuantity    Int
+  availableQuantity  Int
+  expirationDate     DateTime?
+  status             String                 @default("ACTIVE") // ACTIVE | DEPLETED | SCRAPPED
+  colorCode          String                 @default("GREEN_SAFE") // RED_URGENT | YELLOW_WARNING | GREEN_SAFE
+  entryDate          DateTime               @default(now())
+  createdAt          DateTime               @default(now())
+  updatedAt          DateTime               @updatedAt
+  product            Product                @relation(fields: [productId], references: [id])
+  transactions       InventoryTransaction[]
+}
+
+model InventoryTransaction {
+  id              String         @id @default(uuid())
+  batchId         String
+  transactionType String         // ENTRY | DISPATCH | ADJUSTMENT_SCRAP
+  quantity        Int
+  balanceAfter    Int
+  reason          String?
+  operatorName    String
+  transactionDate DateTime       @default(now())
+  createdAt       DateTime       @default(now())
+  batch           InventoryBatch @relation(fields: [batchId], references: [id])
+}
+

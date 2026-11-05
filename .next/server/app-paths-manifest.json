@@ -1,0 +1,7 @@
+{
+  "/page": "app/page.js",
+  "/inventory/dashboard/page": "app/inventory/dashboard/page.js",
+  "/inventory/quick-entry/page": "app/inventory/quick-entry/page.js",
+  "/api/inventory/dashboard/route": "app/api/inventory/dashboard/route.js",
+  "/inventory/dispatch/page": "app/inventory/dispatch/page.js"
+}

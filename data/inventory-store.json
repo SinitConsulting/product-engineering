@@ -1,0 +1,66 @@
+{
+  "products": [
+    {
+      "id": "708cd90b-804a-46ef-8a57-a79e01349e54",
+      "sku": "SKU-ARROZ-1KG",
+      "name": "Producto SKU-ARROZ-1KG",
+      "category": "NON_PERISHABLE",
+      "unit": "UNIDAD",
+      "currentTotalStock": 50,
+      "createdAt": "2026-11-04T22:21:31.272Z",
+      "updatedAt": "2026-11-04T22:21:31.273Z"
+    }
+  ],
+  "batches": [
+    {
+      "id": "092a7299-9fe3-41c0-9d53-cff28361b5cc",
+      "productId": "708cd90b-804a-46ef-8a57-a79e01349e54",
+      "batchNumber": "LOTE-A",
+      "initialQuantity": 30,
+      "availableQuantity": 30,
+      "expirationDate": null,
+      "status": "ACTIVE",
+      "colorCode": "GREEN_SAFE",
+      "entryDate": "2026-11-04T22:21:31.272Z",
+      "createdAt": "2026-11-04T22:21:31.272Z",
+      "updatedAt": "2026-11-04T22:21:31.272Z"
+    },
+    {
+      "id": "c37be43a-92da-4ae0-87da-243fa0854fcb",
+      "productId": "708cd90b-804a-46ef-8a57-a79e01349e54",
+      "batchNumber": "LOTE-B",
+      "initialQuantity": 20,
+      "availableQuantity": 20,
+      "expirationDate": null,
+      "status": "ACTIVE",
+      "colorCode": "GREEN_SAFE",
+      "entryDate": "2026-11-04T22:21:31.273Z",
+      "createdAt": "2026-11-04T22:21:31.273Z",
+      "updatedAt": "2026-11-04T22:21:31.273Z"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "7336e896-2ad9-453a-832d-1faad14bf11d",
+      "batchId": "092a7299-9fe3-41c0-9d53-cff28361b5cc",
+      "transactionType": "ENTRY",
+      "quantity": 30,
+      "balanceAfter": 30,
+      "reason": "Registro Rápido de Entrada",
+      "operatorName": "Voluntaria Ana",
+      "transactionDate": "2026-11-04T22:21:31.272Z",
+      "createdAt": "2026-11-04T22:21:31.272Z"
+    },
+    {
+      "id": "b8b8ac9d-8af6-410c-8ab4-7898adb766d8",
+      "batchId": "c37be43a-92da-4ae0-87da-243fa0854fcb",
+      "transactionType": "ENTRY",
+      "quantity": 20,
+      "balanceAfter": 20,
+      "reason": "Registro Rápido de Entrada",
+      "operatorName": "Voluntario Pedro",
+      "transactionDate": "2026-11-04T22:21:31.273Z",
+      "createdAt": "2026-11-04T22:21:31.273Z"
+    }
+  ]
+}
